@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background: #CBBED1;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto auto auto;
+    /*header, nav, aside&main, footer */
+    gap: 20px;
+    /* pevné mezery mezi tabulkami*/
+
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside main"
+        "footer footer";
+}
+
+/* Mobile*/
+@media (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*header, nav, aside&main, footer */
+        gap: 20px;
+        /* pevné mezery mezi tabulkami*/
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "aside"
+            "main"
+            "footer";
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Umisťuju kam patří*/
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Vzhled */
+header {
+    background-color: #5F2299;
+    color: #231A43;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #964AAA;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #231A43;
+    transition: transform .5s, background .5s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+aside {
+    background-color: #75498E;
+    color: #231A43;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* Zaoblení rohů */
+}
+
+main {
+    background-color: #A955D0;
+    color: #231A43;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #EB88A3;
+    color: #231A43;
+    padding: 20px;
+    text-align: center;
+}
+
+table.Skills {
+    border-collapse: collapse;
+    border: 1px solid black
+}
+
+table.Skills td,
+th {
+    border: 1px solid black
+}
+
+table.Skills tr {
+    height: 75px;
+}
+
+table.Skills td.prvni {
+    width: 70px;
+    background-color: #CA89D9;
+    text-align: center;
+}
+
+table.Skills td.druha {
+    background-color: #FEC5FE;
+    text-align: center;
+}
+
+table.info td.prvni {
+    width: 80px;
+    font-weight: bold;
+}
+
+table.stats td.prvni {
+    width: 120px;
+    font-weight: bold;
+}
