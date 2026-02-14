@@ -1,24 +1,24 @@
 @font-face {
     font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url(Roboto-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url(fonts/Roboto-Bold.ttf);
+    src: url(Roboto-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: Poppins;
-    src: url(fonts/Poppins-Regular.ttf);
+    src: url(Poppins-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: Poppins;
-    src: url(fonts/Poppins-Bold.ttf);
+    src: url(Poppins-Bold.ttf);
     font-weight: bold;
 }
 
@@ -154,4 +154,5 @@ footer {
     margin: 10px 0;
     height: 120px;
     border-radius: 5px;
+
 }
